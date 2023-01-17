@@ -12,3 +12,4 @@ grafana:
 
 pvNode: b0fh.f0x.pl
 pvDirName: grafana_devenv_pv
+svcNodePort: 30104
