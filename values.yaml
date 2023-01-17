@@ -1,0 +1,19 @@
+grafana:
+  serviceAccount:
+    name: "grafana"
+  service:
+    port: 3000
+  grafana.ini:
+    log:
+      level: debug
+    alerting:
+      enabled: false
+    unified_alerting:
+      enabled: true
+    auth:
+      sigv4_auth_enabled: true
+
+  sidecar:
+    datasources:
+      enabled: true
+      label: grafana_datasource

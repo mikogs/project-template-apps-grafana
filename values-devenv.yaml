@@ -1,0 +1,12 @@
+grafana:
+  sidecar:
+    datasources:
+      config:
+        prometheus:
+          url: http://prometheus.devenv-prometheus.svc.cluster.local:9090
+          uid: prometheus1
+
+  persistence:
+    enabled: true
+    existingClaim: grafana
+
